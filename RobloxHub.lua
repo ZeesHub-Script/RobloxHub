@@ -1,0 +1,367 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/ZeesHub-Script/RobloxHub/refs/heads/main/main.lua")))()
+
+local Window = MakeWindow({
+    Hub = {
+        Title = "Roblox Hub",
+        Animation = "by @zeesvn"
+    },
+
+    Key = {
+        KeySystem = true,
+        Title = "RobloxHub | ZeesVN",
+        Description = "Enter key to activate script. You can get the key by the link below.",
+        
+        KeyLink = "https://zees.rf.gd/robloxhub/getkey.php?i=1",
+        
+        Keys = {}, 
+        
+        CheckUrl = "https://zees.rf.gd/robloxhub/check.php?key=%s", 
+        
+        Notifi = {
+            Notifications = true,
+            CorrectKey = "Loading Script...",
+            Incorrectkey = "Invalid Key",
+            CopyKeyLink = "Copied Get Key Link!"
+        }
+    },
+    
+    CustomKeyCheck = function(key)
+        local url = string.format("https://zees.rf.gd/robloxhub/check.php?key=%s", key)
+        local success, response = pcall(function()
+
+            return game:HttpGet(url, true) 
+        end)
+        
+        if success and response then
+            local data
+            local decodeSuccess = pcall(function()
+
+                data = game:GetService("HttpService"):JSONDecode(response)
+            end)
+            
+            if decodeSuccess and data and data.status == "ok" then
+                return true, data.expire_at or "Key Valid" 
+            elseif data and data.status == "error" then
+                return false, data.message or "Key Invalid Or Server Error"
+            else
+                return false, "Invalid Server Response"
+            end
+        else
+            return false, "Error Connecting To Server."
+        end
+    end
+})
+
+       MinimizeButton({
+       Image = "rbxassetid://100938234788062",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = true,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+     local Tab0 = MakeTab({Name = "Server VIP"})
+     local Tab1 = MakeTab({Name = "Blox Fruit"})
+     local Tab2 = MakeTab({Name = "99 Đêm Trong Rừng"})
+     local Tab3 = MakeTab({Name = "Grow a Garden"})
+     local Tab4 = MakeTab({Name = "Steal a Brainrot"})
+     local Tab5 = MakeTab({Name = "King Legacy"})
+     local Tab6 = MakeTab({Name = "Dead Rails"})
+     local Tab7 = MakeTab({Name = "Hunty Zombie"})
+     
+
+    AddButton(Tab0, {
+     Name = "Meow Gaming (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/anuragaming1/Meow_gaming/refs/heads/main/Servervip.lua.txt"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Hop Server (Need Get Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/noguchihyuga/script/refs/heads/main/hopserver.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "FluHub (Need Get Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zeesvn/FluHub/refs/heads/main/FluHub.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Night Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://github.com/WhiteX1208/Scripts/blob/main/HopScript.luau?raw=true"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "VisionX Hop Server (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xSync-gg/VisionX/refs/heads/main/Server_Finder.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Shadow Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hluuvn/BloxFruit/refs/heads/main/Shadow.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "RedZ Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/luraobermeyer-jpg/redzhub/refs/heads/main/redzhub.lua.txt"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "God Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shinichi-dz/phucshinsayhi/refs/heads/main/Loader.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Rubu V5 (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/rubuhubv5.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Xeter Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+getgenv().Version = "V1"
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Trẩu Roblox (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/traurobloxdeptrai/traukhoaito/refs/heads/main/trauredzupv4.lua'))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Gravity Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Doraemon Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KiddoHiru/BloxFruits/main/MasterHub.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "HNC Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+getgenv().team = "Marines" --"Pirates"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hnc-roblox/HNCHubOnTop/refs/heads/main/HNC_Roblox.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Hiru Hub = RedZ (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+loadstring(game:HttpGet("https://pastefy.app/cbtro9Hc/raw"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "OMG HUB (Need Get Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Blue X Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Onyx Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Teddy Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TeddyHub.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Tuấn Anh Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/TuanAnhIOS/refs/heads/main/TuanAnhIOS-Main.Lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Hoho Hub (Need Get Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Zee Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://zuwz.me/Ls-Zee-Hub"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "TSUO Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "XENO (Need Get Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua"))()
+  end
+  })
+    AddButton(Tab2, {
+     Name = "Foxname | Farm Day+Diamond (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FNDayFarm.lua'))()
+  end
+  })
+    AddButton(Tab2, {
+     Name = "VapeVoidware (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VWExtra/main/NightsInTheForest.lua", true))()
+  end
+  })
+    AddButton(Tab2, {
+     Name = "Vactor Hub (Need Get Key)",
+    Callback = function()
+	  getgenv().V = "Kaitundiamond"
+getgenv().Webhookurl = "LINKWEBHOOK"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AAwful/Vector_Hub/0/v2"))()
+  end
+  })
+    AddButton(Tab2, {
+     Name = "Soluna (Need Get Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://soluna-script.vercel.app/99-Nights-in-the-Forest.lua",true))()
+  end
+  })
+    AddButton(Tab2, {
+     Name = "H4xScripts (Need Get Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/H4xScripts/Loader/refs/heads/main/loader.lua", true))()
+  end
+  })
+    AddButton(Tab2, {
+     Name = "Speed Hub X (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+  end
+  })
+    AddButton(Tab3, {
+     Name = "No Lag (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-NoLag-Hub-no-key-38699"))()
+  end
+  })
+    AddButton(Tab3, {
+     Name = "Zee Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://zuwz.xyz/Zee-Hub-GAG.lua"))()
+  end
+  })
+    AddButton(Tab3, {
+     Name = "ThunderZ Hub (Need Get Key)",
+    Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/GaG/Main.lua'))()
+  end
+  })
+    AddButton(Tab3, {
+     Name = "Dinga Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dingarik/Dingarik/refs/heads/main/GrowAGarden"))()
+  end
+  })
+    AddButton(Tab4, {
+     Name = "Chilli Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua"))()
+  end
+  })
+    AddButton(Tab4, {
+     Name = "zZzZ Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://pastefy.app/DHyT4Zoi/raw"))()
+  end
+  })
+    AddButton(Tab5, {
+     Name = "Zee Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet('https://zuwz.me/Ls-Zee-Hub-KL'))()
+  end
+  })
+    AddButton(Tab5, {
+     Name = "OMG Hub (Need Get Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+  end
+  })
+    AddButton(Tab5, {
+     Name = "Hyper Hub (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
+  end
+  })
+    AddButton(Tab5, {
+     Name = "ARC Hub (Need Get Key)",
+    Callback = function()
+	  getgenv().CustomDistance = 5
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
+  end
+  })
+    AddButton(Tab6, {
+     Name = "Zee Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://zuwz.xyz/Zee-DR.lua"))()
+  end
+  })
+    AddButton(Tab6, {
+     Name = "Nat Hub (Need Get Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))();
+  end
+  })
+    AddButton(Tab6, {
+     Name = "Gumanba (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails", true))()
+  end
+  })
+    AddButton(Tab7, {
+     Name = "Zee Hub (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://zuwz.me/Ls-Zee-Hub-HZ"))()
+  end
+  })
+    AddButton(Tab7, {
+     Name = "Taro (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/HuntyZombie"))()
+  end
+  })
