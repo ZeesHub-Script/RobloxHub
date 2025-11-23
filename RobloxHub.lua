@@ -79,10 +79,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/anuragaming1/Meow_gam
   end
   })
     AddButton(Tab1, {
-     Name = "Hop Server (Need Get Key)",
+     Name = "Min Gaming V5 (No Key)",
     Callback = function()
-	  repeat wait() until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/noguchihyuga/script/refs/heads/main/hopserver.lua"))()
+		repeat wait() until game:IsLoaded()
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://github.com/LuaCrack/Min/raw/refs/heads/main/MinVnV5"))()	
   end
   })
     AddButton(Tab1, {
