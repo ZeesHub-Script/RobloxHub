@@ -278,7 +278,7 @@ function MakeWindow(Configs)
     })
     
     local ConfirmButton = Create("TextButton", KeyMenu, {
-      Text = "Xác nhận",
+      Text = "Confirm",
       Font = Configs_HUB.Text_Font,
       TextSize = 20,
       TextColor3 = Configs_HUB.Cor_Text,
@@ -302,7 +302,7 @@ function MakeWindow(Configs)
       Size = UDim2.new(1, -70, 0, 40),
       Position = UDim2.new(0, 35, 0, 90),
       BackgroundColor3 = Configs_HUB.Cor_Options,
-      PlaceholderText = "Nhập key ở đây",
+      PlaceholderText = "Enter Key",
       Text = "",
       TextColor3 = Configs_HUB.Cor_Text,
       Font = Configs_HUB.Text_Font,
