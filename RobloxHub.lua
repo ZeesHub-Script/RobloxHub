@@ -89,7 +89,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/noguchihyuga/script/r
      Name = "FluHub (Need Get Key)",
     Callback = function()
 	  repeat wait() until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zeesvn/FluHub/refs/heads/main/FluHub.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zeesvn/FluHub/refs/heads/main/FluX.lua"))()
   end
   })
     AddButton(Tab1, {
