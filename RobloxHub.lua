@@ -107,14 +107,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/xSync-gg/VisionX/refs
   end
   })
     AddButton(Tab1, {
-     Name = "Shadow Hub (No Key)",
+     Name = "W-Shadow Hub (Need Get Key)",
     Callback = function()
 	  repeat wait() until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hluuvn/BloxFruit/refs/heads/main/Shadow.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zeesvn/W-ShadowHub/refs/heads/main/Script.lua"))()
   end
   })
     AddButton(Tab1, {
-     Name = "RedZ Hub (No Key)",
+     Name = "Redz Hub Fake (No Key)",
     Callback = function()
 	  repeat wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/luraobermeyer-jpg/redzhub/refs/heads/main/redzhub.lua.txt"))()
