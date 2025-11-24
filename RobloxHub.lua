@@ -2,8 +2,8 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/ZeesHub-Script/Roblo
 
 local Window = MakeWindow({
     Hub = {
-        Title = "Roblox Hub",
-        Animation = "by @zeesvn"
+        Title = "RobloxHub",
+        Animation = "gg/WYMXvrnpz2"
     },
 
     Key = {
@@ -63,7 +63,7 @@ local Window = MakeWindow({
       
      local Tab0 = MakeTab({Name = "Server VIP"})
      local Tab1 = MakeTab({Name = "Blox Fruit"})
-     local Tab2 = MakeTab({Name = "99 Đêm Trong Rừng"})
+     local Tab2 = MakeTab({Name = "99 Night"})
      local Tab3 = MakeTab({Name = "Grow a Garden"})
      local Tab4 = MakeTab({Name = "Steal a Brainrot"})
      local Tab5 = MakeTab({Name = "King Legacy"})
@@ -87,7 +87,7 @@ loadstring(game:HttpGet("https://github.com/LuaCrack/Min/raw/refs/heads/main/Min
   end
   })
     AddButton(Tab1, {
-     Name = "FluHub (Need Get Key)",
+     Name = "FluHub (No Key)",
     Callback = function()
 	  repeat wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zeesvn/FluHub/refs/heads/main/FluX.lua"))()
@@ -108,7 +108,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/xSync-gg/VisionX/refs
   end
   })
     AddButton(Tab1, {
-     Name = "W-Shadow Hub (Need Get Key)",
+     Name = "W-Shadow Hub (No Key)",
     Callback = function()
 	  repeat wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zeesvn/W-ShadowHub/refs/heads/main/Script.lua"))()
