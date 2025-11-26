@@ -75,6 +75,21 @@ loadstring(game:HttpGet("https://github.com/WhiteX1208/Scripts/blob/main/HopScri
   end
   })
     AddButton(Tab1, {
+     Name = "Auto Kaitun (No Key)",
+    Callback = function()
+	  repeat wait() until game:IsLoaded()
+getgenv().Configs = {['Quest'] = {['Evo Race V2'] = true; ['Evo Race V3'] = true; ['RGB Haki'] = true; ['Pull Lerver'] = true;}; ['Webhook'] = {['Url Webhook'] = ''; ['Ping discord'] = ''; ['Time Send'] = '10m';}; ['Sword'] = {'Dual-Headed Blade'; 'Smoke Admiral'; 'Wardens Sword'; 'Cutlass'; 'Katana'; 'Dual Katana'; 'Triple Katana'; 'Iron Mace'; 'Saber'; 'Pole (1st Form)'; 'Gravity Blade'; 'Longsword'; 'Rengoku'; 'Midnight Blade'; 'Soul Cane'; 'Bisento'; 'Yama'; 'Tushita'; 'Cursed Dual Katana';}; ['Gun'] = {'Skull Guitar'; 'Kabucha'; 'Venom Bow'; 'Musket'; 'Flintlock'; 'Refined Slingshot'; 'Magma Blaster'; 'Dual Flintlock'; 'Cannon'; 'Bizarre Revolver'; 'Bazooka';}; ['FPS Booster'] = true;}; loadstring(game:HttpGet('https://raw.githubusercontent.com/shinichi-dz/phucshinsayhi/refs/heads/main/KaitunBloxFruit.lua'))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "TrongNguyenHub AutoChest (No Key)",
+    Callback = function()
+	repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Team = 'Marines'
+loadstring(game:HttpGet('https://raw.githubusercontent.com/trongdeptraihucscript/Main/refs/heads/main/TN-Tp-Chest.lua'))()
+  end
+  })
+    AddButton(Tab1, {
      Name = "W-Shadow Hub (No Key)",
     Callback = function()
 	  repeat wait() until game:IsLoaded()
@@ -214,6 +229,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/KimP/refs/he
      Name = "XENO (Get Key)",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua"))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "Auto Bounty (No Key)",
+    Callback = function()
+	  repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayergetgenv().Team = 'Pirates'getgenv().Mode = 'Auto Bounty'getgenv().Config = { ['Safe Health'] = {30, 50},  ['Custom Y Run'] = { Enabled = true, ['Y Run'] = 5000 }, ['Hunt Method'] = { ['Use Move Predict'] = false, ['Hit and Run'] = false, ['Aimbot'] = true, ['ESP Player'] = true, ['Skip Player'] = {'nhinemtheothangkhac2'}, ['Max Attack Time'] = 60, ['Lock Bounty'] = { ['Enabled'] = false, ['Bounty'] = {0, 30000000} } }, ['Stats'] = { ['Enable'] = false, ['Reset Stats'] = false, ['Point'] = { ['Points per lift'] = nil, ['Melee'] = nil, ['Defence'] = nil, ['Sword'] = nil, ['Gun'] = nil, ['Devil Fruit'] = nil } }, ['Shop'] = { ['Random Fruit'] = false, ['Store Fruit'] = true, ['Zoro Sword'] = false }, ['Theme'] = { Name = 'Basic', UIUrl = '',  Custom = { ['Enable'] = false, ['title_color'] = Color3.fromRGB(255, 221, 252), ['titleback_color'] = Color3.fromRGB(169, 20, 255), ['list_color'] = Color3.fromRGB(255, 221, 252), ['liststroke_color'] = Color3.fromRGB(151, 123, 207), ['button_color'] = Color3.fromRGB(255, 221, 252), ['title_font'] = Enum.Font.FredokaOne, ['text_font'] = Enum.Font.Gotham, ['title_size'] = 40, ['text_size'] = 24 } }, ['Setting'] = { ['World'] = 3, ['Remove Saved File'] = false, ['White Screen'] = false, ['Fast Delay'] = 0.5, ['Tween Speed'] = 350, ['Bypass TP'] = true, ['FPS BOOSTER'] = false, ['Url'] = '',  ['Select Region'] = { ['Enabled'] = true, ['Region'] = {'Singapore'}  } }, ['Skip'] = { ['Avoid V4'] = false, ['Fruit'] = { ['Enabled'] = true, ['Avoid Fruit'] = { 'Portal-Portal', 'Kitsune-Kitsune' } } }, ['Spam All Skill On V4'] = { Enabled = true, ['Weapons'] = {'Melee', 'Sword', 'Gun', 'Blox Fruit'} }, ['Items'] = { ['Melee'] = { Enable = true, Delay = 0.4, Skills = { Z = {Enable = true, HoldTime = 0.3}, X = {Enable = true, HoldTime = 0.2}, C = {Enable = true, HoldTime = 0.5} } }, ['Sword'] = { Enable = true, Delay = 0.5, Skills = { Z = {Enable = true, HoldTime = 1}, X = {Enable = true, HoldTime = 0} } }, ['Gun'] = { Enable = false, Delay = 0.3, Skills = { Z = {Enable = true, HoldTime = 0.1}, X = {Enable = true, HoldTime = 0.1} } }, ['Blox Fruit'] = { Enable = false, Delay = 0.4, Skills = { Z = {Enable = true, HoldTime = 0.1}, X = {Enable = true, HoldTime = 0.1}, C = {Enable = true, HoldTime = 0.15}, V = {Enable = true, HoldTime = 0.2}, F = {Enable = true, HoldTime = 0.1} } } }}loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/ca16cb42816b395e079fa7a114352ba9.lua'))()
+  end
+  })
+    AddButton(Tab1, {
+     Name = "TDT Kaitun (No Key)",
+    Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/TRANDUYTHINH/scriptdt/refs/heads/main/7bc2bab10110ef77%20(1).lua'))()
   end
   })
     AddButton(Tab2, {
